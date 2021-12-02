@@ -21,10 +21,11 @@ import {
 
 import Home from "./pages/Home";
 
+
 export const App = () => {
   const something = () => {
     axios
-      .get("/test")
+      .get("/gifs")
       .then((res) => {
         console.log(res);
       })
@@ -37,6 +38,7 @@ export const App = () => {
   useEffect(() => {
     something();
   });
+
 
   return (
     <BrowserRouter>
